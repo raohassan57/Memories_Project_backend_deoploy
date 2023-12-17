@@ -1,3 +1,4 @@
+
 import express from 'express'
 import bodyParser from 'body-parser'
 import mongoose from 'mongoose';
@@ -20,7 +21,8 @@ app.get("/",(req,res)=>{
 // 'mongodb+srv://i-am-new-user:CWngRav9Ofo9BFGq@cluster0.9dvc7.mongodb.net/memories?retryWrites=true&w=majority'
 const PORT = process.env.PORT || 5000
 
-mongoose.connect( 'mongodb+srv://raohassan57:J1Ixr5Rg9zQfd3mj@cluster0.mkbody3.mongodb.net/memories?retryWrites=true&w=majority' , {
+// mongoose.set("strictQuery", false);
+mongoose.connect( "mongodb+srv://raohassan57:J1Ixr5Rg9zQfd3mj@cluster0.2bpylg6.mongodb.net/memories?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
